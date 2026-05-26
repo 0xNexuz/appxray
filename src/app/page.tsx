@@ -349,6 +349,14 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+      <footer className="border-t border-[#161616]/10 bg-[#f4f0e8] px-5 py-8 text-[#161616] sm:px-8 lg:px-12">
+        <div className="mx-auto flex max-w-7xl flex-col gap-3 font-mono text-xs uppercase text-[#5f5b52] sm:flex-row sm:items-center sm:justify-between">
+          <p>Pundit Protocol v1.0.0</p>
+          <p>Built for BuildX Hackathon: X Cup Edition</p>
+          <p>© 2026 Pundit Protocol. All rights reserved.</p>
+        </div>
+      </footer>
     </main>
   );
 }
