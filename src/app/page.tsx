@@ -351,13 +351,28 @@ export default function Home() {
       </section>
 
       <footer className="border-t border-[#161616]/10 bg-[#f4f0e8] px-5 py-8 text-[#161616] sm:px-8 lg:px-12">
-        <div className="mx-auto flex max-w-7xl flex-col gap-3 font-mono text-xs uppercase text-[#5f5b52] sm:flex-row sm:items-center sm:justify-between">
-          <p>Pundit Protocol v1.0.0</p>
-          <p>Built for BuildX Hackathon: X Cup Edition</p>
-          <p>© 2026 Pundit Protocol. All rights reserved.</p>
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4">
+          <p className="font-mono text-xs uppercase text-[#5f5b52]">AppXRay © Magnus</p>
+          <a
+            href="https://github.com/0xNexuz"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Magnus on GitHub"
+            className="grid size-10 place-items-center rounded-sm border border-[#161616]/15 text-[#161616] transition hover:bg-[#161616] hover:text-[#b9ff66]"
+          >
+            <GitHubMark />
+          </a>
         </div>
       </footer>
     </main>
+  );
+}
+
+function GitHubMark() {
+  return (
+    <svg aria-hidden="true" className="size-5" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.86 8.35 6.84 9.71.5.09.68-.22.68-.49 0-.24-.01-.88-.01-1.73-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.36 9.36 0 0 1 12 6.96c.85 0 1.7.12 2.5.34 1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.59.69.49A10.07 10.07 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z" />
+    </svg>
   );
 }
 
